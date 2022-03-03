@@ -242,6 +242,9 @@
           <%- unless $route[scope] =~ Undef { -%>
           scope: <%= $route[scope] %>
           <%- } -%>
+          <%- unless $route[from] =~ Undef { -%>
+          from: <%= $route[from] %>
+          <%- } -%>
       <%- } -%>
     <%- } -%>
     <%- if $routing_policy { -%>
